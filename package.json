@@ -50,6 +50,7 @@
     "patch:hosts": "curl -sSL https://raw.githubusercontent.com/RedHatInsights/insights-proxy/master/scripts/patch-etc-hosts.sh -o - | sudo sh -",
     "start": "fec dev",
     "start:proxy": "PROXY=true fec dev",
+    "static": "fec static",
     "test": "jest --verbose --env=jsdom",
     "travis:build": "NODE_ENV=production fec build",
     "verify": "npm-run-all build lint test",
